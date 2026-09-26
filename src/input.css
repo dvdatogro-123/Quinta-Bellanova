@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Los estilos visuales actuales se conservarán durante la migración. */
+@import "../style.css";

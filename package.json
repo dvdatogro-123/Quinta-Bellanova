@@ -1,0 +1,14 @@
+{
+  "name": "quinta-bellanova",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estático de Quinta Bellanova con Tailwind CSS",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
