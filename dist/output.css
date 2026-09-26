@@ -465,8 +465,16 @@ section[id] {
 .btn:hover {
   transform: translateY(-3px);
 }
-.btn span {
-  margin-left: 20px;
+.btn-arrow {
+  width: .9rem;
+  height: .9rem;
+  flex: 0 0 auto;
+  margin-left: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.65;
 }
 .btn-forest {
   background: var(--forest);
@@ -669,9 +677,14 @@ section[id] {
   font-size: .85rem;
 }
 .stay-list li:before {
-  content: '↗';
-  margin-right: 14px;
-  color: #688061;
+  content: '';
+  width: .42rem;
+  height: .42rem;
+  flex: 0 0 .42rem;
+  margin-right: 17px;
+  border-top: 2px solid #688061;
+  border-right: 2px solid #688061;
+  transform: rotate(45deg);
 }
 .stay-copy p.stay-small {
   font-size: .74rem;
@@ -991,7 +1004,11 @@ footer span, footer a:not(.footer-brand) {
   height: 19px;
   border: 1px solid #ffffff88;
   border-radius: 50%;
-  font-size: .8rem;
+}
+.whatsapp-float-mark .btn-arrow {
+  width: .7rem;
+  height: .7rem;
+  margin-left: 0;
 }
 .skip-link {
   position: fixed;
