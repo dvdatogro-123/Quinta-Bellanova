@@ -672,19 +672,22 @@ section[id] {
   margin: 25px 0;
 }
 .stay-list li {
+  display: flex;
+  align-items: center;
   padding: 8px 0;
   border-bottom: 1px solid #cbd3c4;
   font-size: .85rem;
 }
-.stay-list li:before {
-  content: '';
-  width: .42rem;
-  height: .42rem;
-  flex: 0 0 .42rem;
-  margin-right: 17px;
-  border-top: 2px solid #688061;
-  border-right: 2px solid #688061;
-  transform: rotate(45deg);
+.list-arrow {
+  width: .8rem;
+  height: .8rem;
+  flex: 0 0 .8rem;
+  margin-right: 16px;
+  fill: none;
+  stroke: #688061;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.65;
 }
 .stay-copy p.stay-small {
   font-size: .74rem;
@@ -996,19 +999,6 @@ footer span, footer a:not(.footer-brand) {
   background: #2d5747;
   color: white;
   transform: translateY(-3px);
-}
-.whatsapp-float-mark {
-  display: grid;
-  place-items: center;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #ffffff88;
-  border-radius: 50%;
-}
-.whatsapp-float-mark .btn-arrow {
-  width: .7rem;
-  height: .7rem;
-  margin-left: 0;
 }
 .skip-link {
   position: fixed;
